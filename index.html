@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock • Paper • Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <h1>Rock • Paper • Scissors</h1>
+      <p class="subtitle">First to score the most wins. Click a move to play.</p>
+    </header>
+
+    <main class="game-card">
+      <section class="choices-section">
+        <h2 class="section-title">Choose your move</h2>
+        <div class="choices">
+          <button class="choice" id="rock" aria-label="Rock">
+            <span class="choice-glow"></span>
+            <img src="./images/rock.png" alt="Rock" />
+            <span class="choice-label">Rock</span>
+          </button>
+          <button class="choice" id="paper" aria-label="Paper">
+            <span class="choice-glow"></span>
+            <img src="./images/paper.png" alt="Paper" />
+            <span class="choice-label">Paper</span>
+          </button>
+          <button class="choice" id="scissors" aria-label="Scissors">
+            <span class="choice-glow"></span>
+            <img src="./images/scissors.png" alt="Scissors" />
+            <span class="choice-label">Scissors</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="status-section">
+        <div class="score-board">
+          <div class="score">
+            <p class="score-label">You</p>
+            <p id="user-score" class="score-value">0</p>
+          </div>
+          <div class="score">
+            <p class="score-label">Computer</p>
+            <p id="comp-score" class="score-value">0</p>
+          </div>
+        </div>
+
+        <div class="msg-container">
+          <p id="msg" class="msg--neutral">Play your move to start the game</p>
+        </div>
+
+        <button id="reset-btn" class="reset-btn" type="button">
+          Reset Game
+        </button>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Tip: Rock crushes Scissors • Scissors cut Paper • Paper covers Rock</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
